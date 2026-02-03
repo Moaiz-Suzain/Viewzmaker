@@ -1,0 +1,253 @@
+/* =========================
+   Viewzmaker Brand CSS
+   Black · Red · White
+   ========================= */
+
+/* Brand Colors */
+:root {
+  --bg-main: #000000;
+  --bg-card: #111111;
+  --bg-soft: #1a1a1a;
+  --text-main: #ffffff;
+  --text-muted: #b3b3b3;
+  --brand-red: #e50914;
+  --border-soft: #222222;
+}
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+
+.brand-logo {
+  width: 180px;              /* slightly smaller */
+  max-width: 65%;
+  height: auto;
+  margin: 0 auto 28px auto;  /* more breathing room */
+  display: flex;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(229, 9, 20, 0.15);
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .brand-logo {
+    width: 150px;
+    margin-bottom: 18px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Poppins", Arial, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.7;
+}
+
+/* Layout */
+header,
+section,
+footer {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 24px;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  background: radial-gradient(circle at top, #111 0%, #000 70%);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.hero p {
+  color: #b3b3b3;
+  font-size: 1.1rem;
+}
+
+.hero p {
+  margin: 6px 0;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 36px;
+  background: var(--brand-red);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(229, 9, 20, 0.35);
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+section {
+  background: var(--bg-main);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+h3 {
+  margin-top: 40px;
+  margin-bottom: 14px;
+}
+
+/* =========================
+   SERVICES
+   ========================= */
+
+.services {
+  display: grid;
+  gap: 24px;
+}
+
+.services ul {
+  list-style: none;
+  background: #111;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #222;
+}
+
+.services li {
+  margin-bottom: 10px;
+  color: var(--text-muted);
+}
+
+.services strong {
+  color: var(--text-main);
+}
+
+/* =========================
+   PRICING TABLES
+   ========================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  margin-bottom: 40px;
+  background: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th {
+  background: #0d0d0d;
+  color: var(--text-main);
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+table td {
+  padding: 14px;
+  border-bottom: 1px solid var(--border-soft);
+  color: var(--text-muted);
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+tr.highlight {
+  background: rgba(229, 9, 20, 0.08);
+}
+
+/* =========================
+   HOW IT WORKS
+   ========================= */
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.step {
+  flex: 1;
+  min-width: 220px;
+  background: var(--bg-card);
+  padding: 26px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid var(--border-soft);
+  font-weight: 500;
+}
+
+/* =========================
+   DISCLAIMER
+   ========================= */
+
+.disclaimer {
+  background: var(--bg-soft);
+  border-left: 4px solid var(--brand-red);
+  padding: 28px;
+  border-radius: 6px;
+  color: var(--text-muted);
+}
+
+.disclaimer strong {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  text-align: center;
+  background: #000;
+  padding-top: 60px;
+  border-top: 1px solid #222;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  header,
+  section,
+  footer {
+    padding: 50px 20px;
+  }
+}
